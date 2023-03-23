@@ -1,0 +1,16 @@
+.h1 {
+  padding: 24px;
+}
+
+.name {
+  padding-top: 16px;
+}
+
+.toolbar {
+  padding-top: 16px;
+
+  .item {
+    width: 80px;
+    cursor: pointer;
+  }
+}

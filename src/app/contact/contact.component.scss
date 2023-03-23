@@ -1,0 +1,16 @@
+.full-width {
+  width: 95%
+}
+
+.half-width {
+  width: 45%
+}
+
+.form-size {
+  width: 75%
+}
+
+table { page-break-inside:auto }
+tr    { page-break-inside:avoid; page-break-after:auto }
+thead { display:table-header-group }
+tfoot { display:table-footer-group }
