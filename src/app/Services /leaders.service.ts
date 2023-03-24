@@ -19,7 +19,7 @@ export class LeadersService {
     /*return new Promise(resolve => {
       setTimeout(()=> resolve(LEADERS),2000)
     })*/
-    return of(LEADERS).pipe(delay(2000));
+  return this.http.get<leader[]>(BaseUrl + 'leadership')
   }
 
   getFeaturedLeader(): Observable<leader>{

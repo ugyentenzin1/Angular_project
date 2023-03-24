@@ -2,6 +2,7 @@ import {Component, Inject, OnInit} from '@angular/core';
 import { Dish } from "../shared /dish";
 import {DishService} from "../Services /dish.service";
 import { flyInOut, expand } from '../animations /app.animation';
+import {BaseUrl} from "../shared /baseUrl";
 
 @Component({
   selector: 'app-menu',
@@ -19,7 +20,7 @@ import { flyInOut, expand } from '../animations /app.animation';
 export class MenuComponent implements OnInit {
 
   constructor(private dishService: DishService) { }
-
+  baseUrl = BaseUrl;
   dishes!: Dish[]; //or dishes: Dish[] method 2
   errMess: string;
 
