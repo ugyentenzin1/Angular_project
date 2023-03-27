@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Dish} from "../shared /dish";
 import {DISHES} from "../shared /dishes";
-import {delay, map, Observable, of, catchError} from "rxjs";
+import {delay, map, Observable, of, catchError, switchMap} from "rxjs";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import * as http from "http";
 import {get} from "http";

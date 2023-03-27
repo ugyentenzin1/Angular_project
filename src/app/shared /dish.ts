@@ -2,7 +2,8 @@ import {comments} from "./comment";
 
 export class Dish {
   id?: string;
-  name?: string;
+  amount?: any;
+  name?: any;
   image?: string;
   category?: string;
   featured?: boolean;

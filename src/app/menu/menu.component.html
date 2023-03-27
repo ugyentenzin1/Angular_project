@@ -4,11 +4,21 @@
     <hr>
   </div>
   <div fxFlex *ngIf="dishes">
-    <mat-grid-list cols="2" rowHeight="200px">
-      <mat-grid-tile *ngFor="let dish of dishes" [routerLink]="['/dishdetail', dish.id]" appHighlight>
-        <img height="200px" src="{{dish.image}}"/>
-        <mat-grid-tile-footer>
+    <mat-grid-list cols="2" rowHeight="350px">
+      <mat-grid-tile *ngFor="let dish of dishes" appHighlight>
+        <img width="100%" src="{{dish.image}}" [routerLink]="['/dishdetail', dish.id]"/>
+        <mat-grid-tile-footer fxLayout="row" fxLayoutAlign="space-between">
           <h1 matLine>{{dish.name | uppercase}}</h1>
+          <button class="orderButton" mat-button>
+            <button mat-button (click)="subtract(dish.id)">
+              <span class="fa fa-minus-circle fa-lg"></span>
+            </button>
+            <span>{{dish.amount}}</span>
+            <button mat-button (click)="add(dish.id)">
+              <span class="fa fa-plus-circle fa-lg"></span>
+            </button>
+          </button>
+          <button mat-button (click)="addToCart(dish.id)">Add To Cart</button>
         </mat-grid-tile-footer>
       </mat-grid-tile>
     </mat-grid-list>
