@@ -1,0 +1,27 @@
+<div class="p-16">
+  <h2>Ordered List</h2>
+  <table class="width--50 ml-24">
+    <thead>
+    <tr>
+      <td class="border--all p-8" *ngFor="let header of head">{{header}}</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let order of orderedNum">
+      <td class="border--all p-8">{{order.id}}</td>
+      <td class="border--all p-8 text-align-center">
+        <img src="{{order.image}}" width="50px" alt="image">
+      </td>
+      <td class="border--all p-8">{{order.name}}</td>
+      <td class="border--all p-8 text-align-center">{{order.amount}}</td>
+      <td class="border--all p-8 text-align-center">
+        <i class="{{order.icon}} cursor--pointer" (click)="delete()"></i>
+      </td>
+    </tr>
+    <tr>
+      <td class="border--all text-align-center font--heavy" colspan="3">Total</td>
+      <td class="border--all font--heavy text-align-center font--italic" colspan="2"></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

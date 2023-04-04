@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Dish} from "../shared /dish";
 import {DISHES} from "../shared /dishes";
-import {delay, map, Observable, of, catchError, switchMap} from "rxjs";
+import {delay, map, Observable, of, catchError, switchMap, BehaviorSubject} from "rxjs";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import * as http from "http";
 import {get} from "http";
@@ -13,6 +13,8 @@ import {ProcessHTTPmsgService} from "./process-httpmsg.service";
   providedIn: 'root'
 })
 export class DishService {
+
+  public orderNumber = new BehaviorSubject<Dish[]>([]);//it gives the initial value
 
   constructor(private http: HttpClient,
               private processHTTPmsgService: ProcessHTTPmsgService) { }
@@ -60,4 +62,9 @@ export class DishService {
     return this.http.put<Dish>(`${BaseUrl}dishes/${dish.id}`, dish, httpOptions).pipe(catchError(this.processHTTPmsgService.handleError));
   }
 
+  updateAmount(id: string, value: Dish): Observable<Dish> {
+    return this.http.put<Dish>(`${BaseUrl}dishes/${value.id}`, value).pipe(
+      switchMap(() => this.http.get(`${BaseUrl}dishes`))
+    );
+  }
 }

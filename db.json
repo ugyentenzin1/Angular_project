@@ -2,8 +2,9 @@
   "dishes": [
     {
       "id": "0",
-      "amount": 9,
+      "amount": 66,
       "name": "ema datsi",
+      "icon": "fa fa-trash fa-lg",
       "image": "/assets/images/ema-datsi.png",
       "category": "mains",
       "featured": false,
@@ -57,11 +58,12 @@
     },
     {
       "id": "1",
-      "amount": 0,
+      "amount": 37,
       "name": "Sha Kam Pa",
       "image": "assets/images/sha_kam_pa.png",
       "category": "appetizer",
       "featured": true,
+      "icon": "fa fa-trash fa-lg",
       "label": "",
       "price": "1.99",
       "description": "Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce",
@@ -124,10 +126,11 @@
     },
     {
       "id": "2",
-      "amount": 11,
+      "amount": 34,
       "name": "Juma (sausage)",
       "image": "assets/images/juma.png",
       "category": "appetizer",
+      "icon": "fa fa-trash fa-lg",
       "featured": false,
       "label": "New",
       "price": "1.99",
@@ -167,11 +170,12 @@
     },
     {
       "id": "3",
-      "amount": 0,
+      "amount": 15,
       "name": "ara",
       "image": "assets/images/ara.png",
       "category": "dessert",
       "featured": false,
+      "icon": "fa fa-trash fa-lg",
       "label": "",
       "price": "2.99",
       "description": "A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms",
@@ -216,12 +220,13 @@
     },
     {
       "id": "4",
-      "amount": 10,
+      "amount": 30,
       "name": "Kewa Datsi",
       "image": "assets/images/kewa-datsi.png",
       "category": "dessert",
       "featured": false,
       "label": "",
+      "icon": "fa fa-trash fa-lg",
       "price": "2.99",
       "description": "A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms",
       "comments": [
@@ -260,16 +265,29 @@
           "comment": "Looks good \n",
           "rating": 4,
           "date": "2023-03-24T09:54:29.494Z"
+        },
+        {
+          "author": "ugyeb",
+          "comment": "dnsvndbsv dnv",
+          "rating": 4,
+          "date": "2023-03-29T11:29:25.335Z"
+        },
+        {
+          "author": "Soangay ",
+          "comment": "this is the best after all",
+          "rating": 4,
+          "date": "2023-03-29T11:29:37.819Z"
         }
       ]
     },
     {
       "id": "5",
-      "amount": 0,
+      "amount": 11,
       "name": "Momo",
       "image": "assets/images/momo.png",
       "category": "dessert",
       "featured": false,
+      "icon": "fa fa-trash fa-lg",
       "label": "",
       "price": "2.99",
       "description": "A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms",

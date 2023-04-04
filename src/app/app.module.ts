@@ -39,6 +39,8 @@ import {BaseUrl} from "./shared /baseUrl";
 import {HttpClientModule} from "@angular/common/http";
 import {ProcessHTTPmsgService} from "./Services /process-httpmsg.service";
 import { HighlightDirective } from './directives/highlight.directive';
+import { OrderComponent } from './order/order.component';
+import { ConfimationComponent } from './confimation/confimation.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { HighlightDirective } from './directives/highlight.directive';
     AboutComponent,
     ContactComponent,
     LoginComponent,
-    HighlightDirective
+    HighlightDirective,
+    OrderComponent,
+    ConfimationComponent
   ],
   imports: [
     BrowserModule,

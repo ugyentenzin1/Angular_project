@@ -1,0 +1,43 @@
+.p{
+  &-16 {
+    padding: 16px;
+  }
+
+  &-8 {
+    padding: 8px;
+  }
+}
+
+
+
+.text-align-center {
+  text-align: center;
+}
+
+.width--50{
+  width: 50%;
+}
+
+.border--all {
+  border: 1px solid black;
+}
+
+.border-y {
+  border-bottom: 1px solid black;
+}
+
+.ml-24 {
+  margin-left: 24px;
+}
+
+.cursor--pointer {
+  cursor: pointer;
+}
+
+.font--heavy {
+  font-weight: 600;
+}
+
+.font--italic {
+  font-style: italic;
+}

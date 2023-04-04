@@ -17,6 +17,6 @@ export class FeedbackService {
         'Content-type': 'application/json'
       })
     }
-    return this.http.post<Feedback>(BaseUrl + 'feedback', feedBackCopy, httpOptions);
+    return this.http.post<Feedback>( `${BaseUrl}feedback`, feedBackCopy, httpOptions);
   }
 }
